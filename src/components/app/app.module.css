@@ -1,0 +1,71 @@
+.weatherSkyClear,
+.weatherFog,
+.weatherRain,
+.weatherSnow {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 10px;
+	color: aliceblue;
+	background-size: cover;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.weatherSkyClear {
+	background: url("../../img/sky_clear.jpg") no-repeat center;
+}
+.weatherFog {
+	background: url("../../img/clouds.jpg") no-repeat center;
+}
+.weatherRain {
+	background: url("../../img/rain.jpg") no-repeat center;
+}
+.weatherSnow {
+	background: url("../../img/snowfalling.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.weatherSkyClear::before,
+.weatherFog::before,
+.weatherRain::before,
+.weatherSnow::before {
+	z-index: -1;
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.5));
+}
+
+.wrapperCenter {
+	margin: 0 auto;
+	max-width: 1170px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.emptyWeather {
+	font-size: 25px;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.wrapperCenter {
+		gap: 25px;
+	}
+}
+@media (max-width: 500px) {
+	.wrapperCenter {
+		gap: 20px;
+	}
+}

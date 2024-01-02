@@ -1,0 +1,23 @@
+.currentWeather {
+	width: 100%;
+	font-family: "Inter", sans-serif;
+}
+.currentInfo {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.currentInfoBold {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.currentInfo {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+}
+@media (max-width: 500px) {
+	.currentInfo {
+		font-size: 13px;
+	}
+}

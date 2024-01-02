@@ -1,0 +1,55 @@
+.results {
+	position: absolute;
+	left: 0;
+	top: 50px;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 15px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #000000d7;
+}
+
+.resultsHidden {
+	display: none;
+}
+
+.result {
+	cursor: pointer;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+	border: 1px solid grey;
+	margin: -1px -1px;
+	padding: 10px 15px;
+}
+.result:not(:last-of-type) {
+	margin-bottom: 0px;
+}
+.result:hover {
+	background-color: #c9c9c960;
+	transition: 0.3s;
+}
+
+.result span {
+	font-weight: 600;
+}
+
+.cityName {
+	font-size: 18px;
+}
+
+@media (max-width: 768px) {
+	.results {
+		font-size: 13px;
+	}
+	.cityName {
+		font-size: 15px;
+	}
+}
+@media (max-width: 768px) {
+}
